@@ -83,7 +83,7 @@ aside {
   margin-top: 0.5rem;
 }
 
-.section-list >li::marker {
+.section-list >li::marker, td {
   font-weight: 600;
   color:hsl(14, 45%, 36%);
 }
@@ -104,6 +104,26 @@ aside {
   margin-bottom: 0.3rem;
 }
 
+table {
+  padding-top: 0.8rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+caption {
+  text-align: left;
+}
+
+th, td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 0.5rem 0 0.5rem 3rem;
+  text-align: left;
+}
+
+th {
+  font-weight: 400;
+}
+
 @media only screen and (max-width: 375px) {
   .banner {
     transform: scale(1.2);
@@ -120,7 +140,7 @@ aside {
   }
 
   .container {
-    max-width: 70vw;
+    max-width: 85vw;
     border-radius: 1rem;
     margin: 5vh auto;
     padding-top: 2rem;
@@ -128,6 +148,12 @@ aside {
 
   .banner {
     border-radius: 1rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    max-width: 55vw;
   }
 }
 
